@@ -6,13 +6,13 @@ const hre = require('hardhat');
 async function main() {
   checkDir();
   let WETH;
-  const { instance } = await deployWETH9();
-  WETH = instance.address;
+  const infoWETH9 = await deployWETH9();
+  WETH = infoWETH9.instance.address;
   if (hre.network.name === 'mainnet')
     WETH = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2';
 
   const ValueswapV2Factory = '?!?'; //?!?
-  const { name, arguments, instance, factory } = await deployValueswapV2Router02(
+  const infoValueswapV2Router02 = await deployValueswapV2Router02(
     ValueswapV2Factory,
     WETH
   );
