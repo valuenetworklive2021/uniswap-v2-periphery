@@ -1,20 +1,20 @@
 pragma solidity =0.6.6;
 
-import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
+import '@valueswap/lib/contracts/libraries/TransferHelper.sol';
 
-import './interfaces/IUniswapV2Migrator.sol';
-import './interfaces/V1/IUniswapV1Factory.sol';
-import './interfaces/V1/IUniswapV1Exchange.sol';
-import './interfaces/IUniswapV2Router01.sol';
+import './interfaces/IValueswapV2Migrator.sol';
+import './interfaces/V1/IValueswapV1Factory.sol';
+import './interfaces/V1/IValueswapV1Exchange.sol';
+import './interfaces/IValueswapV2Router01.sol';
 import './interfaces/IERC20.sol';
 
-contract UniswapV2Migrator is IUniswapV2Migrator {
-    IUniswapV1Factory immutable factoryV1;
-    IUniswapV2Router01 immutable router;
+contract ValueswapV2Migrator is IValueswapV2Migrator {
+    IValueswapV1Factory immutable factoryV1;
+    IValueswapV2Router01 immutable router;
 
     constructor(address _factoryV1, address _router) public {
-        factoryV1 = IUniswapV1Factory(_factoryV1);
-        router = IUniswapV2Router01(_router);
+        factoryV1 = IValueswapV1Factory(_factoryV1);
+        router = IValueswapV2Router01(_router);
     }
 
     // needs to accept ETH from any v1 exchange and the router. ideally this could be enforced, as in the router,
@@ -25,7 +25,7 @@ contract UniswapV2Migrator is IUniswapV2Migrator {
         external
         override
     {
-        IUniswapV1Exchange exchangeV1 = IUniswapV1Exchange(factoryV1.getExchange(token));
+        IValueswapV1Exchange exchangeV1 = IValueswapV1Exchange(factoryV1.getExchange(token));
         uint liquidityV1 = exchangeV1.balanceOf(msg.sender);
         require(exchangeV1.transferFrom(msg.sender, address(this), liquidityV1), 'TRANSFER_FROM_FAILED');
         (uint amountETHV1, uint amountTokenV1) = exchangeV1.removeLiquidity(liquidityV1, 1, 1, uint(-1));

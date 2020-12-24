@@ -1,11 +1,10 @@
-# Uniswap V2
+# Valueswap V2
 
-[![Actions Status](https://github.com/Uniswap/uniswap-v2-periphery/workflows/CI/badge.svg)](https://github.com/Uniswap/uniswap-v2-periphery/actions)
-[![npm](https://img.shields.io/npm/v/@uniswap/v2-periphery?style=flat-square)](https://npmjs.com/package/@uniswap/v2-periphery)
+[![npm](https://img.shields.io/npm/v/@valueswap/v2-periphery?style=flat-square)](https://npmjs.com/package/@valueswap/v2-periphery)
 
-In-depth documentation on Uniswap V2 is available at [uniswap.org](https://uniswap.org/docs).
+In-depth documentation on Valueswap V2 is available at [valuenetworklive2021.github.io/valueswap-protocol](https://valuenetworklive2021.github.io/valueswap-protocol/docs).
 
-The built contract artifacts can be browsed via [unpkg.com](https://unpkg.com/browse/@uniswap/v2-periphery@latest/).
+The built contract artifacts can be browsed via [unpkg.com](https://unpkg.com/browse/@valueswap/v2-periphery@latest/).
 
 # Local Development
 

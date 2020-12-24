@@ -1,29 +1,52 @@
 {
-  "name": "@uniswap/v2-periphery",
-  "version": "1.1.0-beta.0",
-  "description": "🎚 Peripheral smart contracts for interacting with Uniswap V2",
-  "engines": {
-    "node": ">=10"
-  },
-  "homepage": "https://uniswap.org",
+  "name": "@valueswap/v2-periphery",
+  "version": "1.0.2",
+  "description": "🎚 Peripheral smart contracts for interacting with Valueswap V2",
+  "author": "Value Network",
+  "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Uniswap/uniswap-v2-periphery"
+    "url": "https://github.com/valuenetworklive2021/valueswap-v2-periphery"
+  },
+  "scripts": {
+    "lint": "yarn prettier ./test/*.ts --check",
+    "lint:fix": "yarn prettier ./test/*.ts --write",
+    "pretest": "yarn compile",
+    "test": "mocha",
+    "prepublishOnly-": "yarn test",
+    "clean": "npx hardhat clean && rimraf ./build/",
+    "precompile": "yarn clean",
+    "compile": "npx hardhat compile",
+    "postcompile": "yarn copy",
+    "deploy": "node ./scripts/deploy.js",
+    "verify": "node ./scripts/verify.js",
+    "copy": "node ./scripts/copy-contracts.js && yarn copy-v1-artifacts",
+    "copy-v1-artifacts": "ncp ./buildV1 ./build"
   },
   "files": [
     "build",
     "contracts"
   ],
+  "engines": {
+    "node": ">=10"
+  },
   "dependencies": {
-    "@uniswap/lib": "1.1.1",
-    "@uniswap/v2-core": "1.0.0"
+    "@valueswap/lib": "1.0.1",
+    "@valueswap/v2-core": "1.0.2"
   },
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^2.1.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
     "@types/chai": "^4.2.6",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
-    "ethereum-waffle": "^2.4.1",
+    "copyfiles": "^2.4.1",
+    "del-cli": "^3.0.1",
+    "ethereum-waffle": "^3.0.0",
     "ethereumjs-util": "^6.2.0",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.0.6",
     "mocha": "^6.2.2",
     "ncp": "^2.0.0",
     "prettier": "^1.19.1",
@@ -32,17 +55,11 @@
     "ts-node": "^8.5.4",
     "typescript": "^3.7.3"
   },
-  "scripts": {
-    "lint": "yarn prettier ./test/*.ts --check",
-    "lint:fix": "yarn prettier ./test/*.ts --write",
-    "clean": "rimraf ./build/",
-    "copy-v1-artifacts": "ncp ./buildV1 ./build",
-    "precompile": "yarn clean",
-    "compile": "waffle .waffle.json",
-    "postcompile": "yarn copy-v1-artifacts",
-    "pretest": "yarn compile",
-    "test": "mocha",
-    "prepublishOnly": "yarn test"
-  },
-  "license": "GPL-3.0-or-later"
+  "keywords": [
+    "ethereum",
+    "valueswap",
+    "v2",
+    "periphery",
+    "valueswap v2"
+  ]
 }
