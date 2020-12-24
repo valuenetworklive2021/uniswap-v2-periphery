@@ -10,6 +10,8 @@ async function main() {
   WETH = infoWETH9.instance.address;
   if (hre.network.name === 'mainnet')
     WETH = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2';
+  else if (hre.network.name === 'rinkeby' || hre.network.name === 'ropsten')
+    WETH = '0xc778417E063141139Fce010982780140Aa0cD5Ab';
 
   const ValueswapV2Factory = '?!?'; //?!?
   const infoValueswapV2Router02 = await deployValueswapV2Router02(
