@@ -21,7 +21,7 @@ library ValueswapV2Library {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'582192e0e8b232be2f0b8be16eb19ed4d4947868baffd369ec116019ee2b8d37' // INIT_CODE_HASH
+                hex'f27fee3fc000c2148077e3c1de2bfc88ca0e8881a5c9fbb18615dc16f0cc1b75' // INIT_CODE_HASH
             ))));
     }
 

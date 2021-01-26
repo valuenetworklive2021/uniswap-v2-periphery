@@ -1,6 +1,6 @@
 {
   "name": "@valueswap/v2-periphery",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "🎚 Peripheral smart contracts for interacting with Valueswap V2",
   "author": "Value Network",
   "license": "GPL-3.0-or-later",
@@ -22,7 +22,7 @@
     "predeploy": "yarn compile",
     "deploy": "truffle migrations --network",
     "verify": "truffle run verify --network",
-    "prepublishOnly": "yarn test",
+    "prepublishOnly2": "yarn test",
     "ganache-cli": "ganache-cli",
     "concat": "yarn run concat:all",
     "concat:all": "yarn run concat:ValueswapV2Router02",
@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@valueswap/lib": "1.0.1",
-    "@valueswap/v2-core": "1.1.0"
+    "@valueswap/v2-core": "1.2.0"
   },
   "devDependencies": {
     "@truffle/hdwallet-provider": "^1.2.1",
