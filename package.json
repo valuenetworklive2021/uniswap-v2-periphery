@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@valueswap/lib": "1.0.1",
-    "@valueswap/v2-core": "1.2.0"
+    "@valueswap/v2-core": "1.2.1"
   },
   "devDependencies": {
     "@truffle/hdwallet-provider": "^1.2.1",
