@@ -2,7 +2,11 @@
   "name": "@valueswap/v2-periphery",
   "version": "1.2.0",
   "description": "🎚 Peripheral smart contracts for interacting with Valueswap V2",
-  "author": "Value Network",
+  "author": {
+    "name": "Value Network",
+    "email": "support@valuenetwork.live",
+    "url": "https://valuenetwork.live"
+  },
   "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",

@@ -4,7 +4,7 @@ const WETH9 = artifacts.require('WETH9.sol');
 
 
 module.exports = async function (deployer, network, accounts) {
-  const FACTORY_ADDRESS = '0x1f2b12Ef34ca629341F2F77440F0a55a115C86cB';
+  const FACTORY_ADDRESS = '0xF8CC7061b9286b16dF5909BF7969b50209A551E1';
   let WETH_ADDRESS;
   switch (network) {
     case 'mainnet':
