@@ -1,6 +1,6 @@
 {
   "name": "@valueswap/v2-periphery",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "🎚 Peripheral smart contracts for interacting with Valueswap V2",
   "author": {
     "name": "Value Network",
@@ -26,7 +26,7 @@
     "predeploy": "yarn compile",
     "deploy": "truffle migrations --network",
     "verify": "truffle run verify --network",
-    "prepublishOnly2": "yarn test",
+    "prepublishOnly": "yarn test",
     "ganache-cli": "ganache-cli",
     "concat": "yarn run concat:all",
     "concat:all": "yarn run concat:ValueswapV2Router02",
