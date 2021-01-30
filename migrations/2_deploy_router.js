@@ -17,7 +17,7 @@ module.exports = async function (deployer, network, accounts) {
     case 'goerli':
       WETH_ADDRESS = '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6';
       break;
-    case 'goerli':
+    case 'kovan':
       WETH_ADDRESS = '0xd0A1E359811322d97991E03f863a0C30C2cF029C';
       break;
     default:
