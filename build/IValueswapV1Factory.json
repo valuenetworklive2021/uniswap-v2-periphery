@@ -21,16 +21,16 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"getExchange\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/ivannikov/work/botan2475/backups/1611587407/valueswap-v2-periphery/contracts/interfaces/V1/IValueswapV1Factory.sol\":\"IValueswapV1Factory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[]},\"sources\":{\"/Users/ivannikov/work/botan2475/backups/1611587407/valueswap-v2-periphery/contracts/interfaces/V1/IValueswapV1Factory.sol\":{\"keccak256\":\"0x97cf41f192263151cb96dc3c80d52b155ab550df4814fa66fe7fef808fd2ffab\",\"urls\":[\"bzz-raw://1d67f84c9bcb570a8aaaeb2108a81a454b4516bc67fabfec93f701db30eed84e\",\"dweb:/ipfs/QmYHtYT7E3ftKLdQbCciwjgSipYxt4sr8VVhPyDmLZfC1g\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"getExchange\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/second/Documents/work/valueswap-v2-periphery/contracts/interfaces/V1/IValueswapV1Factory.sol\":\"IValueswapV1Factory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[]},\"sources\":{\"/Users/second/Documents/work/valueswap-v2-periphery/contracts/interfaces/V1/IValueswapV1Factory.sol\":{\"keccak256\":\"0x97cf41f192263151cb96dc3c80d52b155ab550df4814fa66fe7fef808fd2ffab\",\"urls\":[\"bzz-raw://1d67f84c9bcb570a8aaaeb2108a81a454b4516bc67fabfec93f701db30eed84e\",\"dweb:/ipfs/QmYHtYT7E3ftKLdQbCciwjgSipYxt4sr8VVhPyDmLZfC1g\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity >=0.5.0;\n\ninterface IValueswapV1Factory {\n    function getExchange(address) external view returns (address);\n}\n",
-  "sourcePath": "/Users/ivannikov/work/botan2475/backups/1611587407/valueswap-v2-periphery/contracts/interfaces/V1/IValueswapV1Factory.sol",
+  "sourcePath": "/Users/second/Documents/work/valueswap-v2-periphery/contracts/interfaces/V1/IValueswapV1Factory.sol",
   "ast": {
-    "absolutePath": "/Users/ivannikov/work/botan2475/backups/1611587407/valueswap-v2-periphery/contracts/interfaces/V1/IValueswapV1Factory.sol",
+    "absolutePath": "/Users/second/Documents/work/valueswap-v2-periphery/contracts/interfaces/V1/IValueswapV1Factory.sol",
     "exportedSymbols": {
       "IValueswapV1Factory": [
         5506
@@ -162,7 +162,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/Users/ivannikov/work/botan2475/backups/1611587407/valueswap-v2-periphery/contracts/interfaces/V1/IValueswapV1Factory.sol",
+      "absolutePath": "/Users/second/Documents/work/valueswap-v2-periphery/contracts/interfaces/V1/IValueswapV1Factory.sol",
       "exportedSymbols": {
         "IValueswapV1Factory": [
           5506
@@ -314,7 +314,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-29T20:23:49.870Z",
+  "updatedAt": "2021-01-30T15:40:00.044Z",
   "devdoc": {
     "methods": {}
   },

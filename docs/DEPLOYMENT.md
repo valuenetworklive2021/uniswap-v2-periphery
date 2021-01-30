@@ -1,7 +1,7 @@
 # Deployment
 
 ropsten
-  - ValueswapV2Router02 0x6b90Fd39F68BE15eeB03792e23edD0Da70b94FAE
+  - ValueswapV2Router02 0xFD43BF3a0059eec72DAD08DEBEfdb3Eb9F329Bdd
     - old ?
 
 
