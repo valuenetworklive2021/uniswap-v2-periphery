@@ -1,6 +1,6 @@
 {
   "name": "@valueswap/v2-periphery",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "🎚 Peripheral smart contracts for interacting with Valueswap V2",
   "author": {
     "name": "Value Network",
@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@valueswap/lib": "1.0.1",
-    "@valueswap/v2-core": "2.0.0"
+    "@valueswap/v2-core": "2.0.1"
   },
   "devDependencies": {
     "@truffle/hdwallet-provider": "^1.2.1",
